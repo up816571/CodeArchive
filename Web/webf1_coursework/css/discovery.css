@@ -1,0 +1,22 @@
+main div {
+  display:block;
+  border-bottom: 1px solid grey;
+  padding-bottom: 0.4em;
+  padding-top: 0.4em;
+  margin-bottom: 0.6em;
+}
+
+#contentlist ul {
+  list-style-type: none;
+  margin-left: -0.5;
+}
+
+div > ul {
+  margin-left: 1.5em;
+}
+
+h1 {
+  margin-top: 0.8em;
+  margin-bottom: 1em;
+  font-size: 1.70em;
+}

@@ -1,0 +1,20 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Images in text</title>
+
+<style>
+    #teapot {
+    }
+
+    .emoji {
+        height: 1em;
+    }
+</style>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed <img id=teapot src="i/teapot.png" class=emoji alt="A picture of a tall creamy white porcelain teapot." > do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <img src="i/teapot.png" class=emoji alt="A second picture of a tall creamy white porcelain teapot." >Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <img src="i/teapot.png" class=emoji alt="Yet another picture of a tall creamy white porcelain teapot." >laborum.</p>
+
+<ol>
+    <li>Here there are three teapots inline.
+    <li>IDs must be unique, so if we want to style all teapots the same we need a class, so they all have a class attribute of <code>emoji</code>.
+    <li>If we make the height of the image 1em (using CSS) observe that the images are now the same height as the text they are embedded in.
+</ol>

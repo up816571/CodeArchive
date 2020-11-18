@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=btName\ btEngine\ btHome\ btBerth
+comment0.target=Boat(java.lang.String,\ int,\ java.lang.String,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Boat\r\n
+comment1.params=
+comment1.target=java.lang.String\ getBoatName()
+comment1.text=\r\n\ Method\ to\ get\ the\ name\ of\ the\ boat\r\n
+comment2.params=
+comment2.target=int\ getEngineSize()
+comment2.text=\r\n\ Method\ to\ get\ the\ engine\ size\ of\ the\ boat\r\n
+comment3.params=
+comment3.target=java.lang.String\ getHomePort()
+comment3.text=\r\n\ Method\ to\ get\ the\ home\ port\ of\ the\ boat\r\n
+comment4.params=
+comment4.target=int\ getBerthNo()
+comment4.text=\r\n\ Method\ to\ get\ the\ berth\ number\ of\ where\ boat\ is\ docked\r\n
+comment5.params=
+comment5.target=void\ printBoatDetails()
+comment5.text=\r\n\ Method\ to\ print\ the\ details\ of\ the\ boat\r\n
+numComments=6

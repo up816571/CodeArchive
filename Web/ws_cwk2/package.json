@@ -1,0 +1,30 @@
+{
+  "name": "ws_cwk2",
+  "version": "1.0.0",
+  "description": "Web Script Coursework 2",
+  "main": "assess.cwk2.js",
+  "scripts": {
+    "test": "node ./node_modules/qunit/bin/cli.js -c artifact/index.js -t test.js",
+    "lint": "node ./node_modules/.bin/eslint .",
+    "zip": "node node_modules/upload_archiver/archiver.js"
+  },
+  "author": "Uni of Portsmouth, School of Computing (http://port.ac.uk/)",
+  "contributors": [
+    "Rich Boakes <rjb@port.ac.uk> (http://rjb.soc.port.ac.uk/)",
+    "Jacek Kopecky <jacek@jacek.cz> (http://jacek.cz/)"
+  ],
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/portsoc/ws_cwk2"
+  },
+  "devDependencies": {
+    "upload_archiver": "git+https://github.com/portsoc/upload_archiver.git",
+    "archiver": "^1.3.0",
+    "qunit": "^0.9.1",
+    "node-fetch": "^1.7.3"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

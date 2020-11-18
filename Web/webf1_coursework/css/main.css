@@ -1,0 +1,140 @@
+/* CSS stuff */
+/* Main CSS */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.25;
+  height:100%;
+}
+
+a {
+  color:black;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.67em;
+}
+
+h2 {
+  font-size: 1.25em;
+  margin-bottom: 0.33em;
+}
+
+main p {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+/*Nav*/
+nav li {
+    float:left;
+    display: block;
+    position: relative;
+}
+
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: red;
+}
+
+nav li a {
+  display:block;
+  text-align: center;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  color: white;
+}
+
+nav li a:hover{
+  background-color: orange;
+  text-decoration: underline;
+}
+
+/*mobile navigation*/
+
+.mobile {
+  display: none;
+  width:100%;
+  background-color: red;
+  position: relative;
+}
+
+.content a {
+  display: block;
+  height:2em;
+  text-align: center;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  color: white;
+}
+
+.content a:hover {
+  background-color: orange;
+  text-decoration: underline;
+}
+
+.content {
+  display:none;
+  position: absolute;
+  overflow:auto;
+  background-color: red;
+  width: 100%;
+}
+
+.mobile button {
+  background: none;
+  font-size: 2em;
+  border: 0;
+  padding-left: 0.5em;
+  padding-right: 6vw;
+}
+
+.show {
+  display:block;
+}
+
+@media only screen and (max-width:32em) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+}
+
+/* General text*/
+
+body {
+ background-color: lightgrey;
+}
+
+main {
+  /*margin: 0 auto;*/
+  max-width: 80em;
+  margin: 0 10%;
+  background-color: lightgrey;
+  padding-bottom: 1em;
+  padding-top: 0.5em;
+}
+
+/* footer */
+footer {
+  position:absolute;
+  background-color: red;
+  display:block;
+  width:100%;
+  height:3em;
+}
+
+footer a {
+  margin-left: 1em;
+  margin-top: 1em;
+  color: white;
+}

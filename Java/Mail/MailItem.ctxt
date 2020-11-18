@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=setTo\ setFrom\ setSub\ setMes
+comment0.target=MailItem(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.params=
+comment1.target=java.lang.String\ getTo()
+comment2.params=
+comment2.target=java.lang.String\ getFrom()
+comment3.params=
+comment3.target=java.lang.String\ getSubject()
+comment4.params=
+comment4.target=java.lang.String\ getMessage()
+comment5.params=
+comment5.target=void\ printInfo()
+numComments=6

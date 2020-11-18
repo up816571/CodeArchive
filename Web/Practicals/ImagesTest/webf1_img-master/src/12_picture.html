@@ -1,0 +1,23 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Responsive Images using Picture</title>
+
+<style>
+    img {
+        width: 100%;
+    }
+</style>
+
+<p>I caught a fish and it was this big:</p>
+<picture>
+    <source media="(min-width: 700px)" srcset="i/thisbig.png">
+    <source media="(min-width: 600px)" srcset="i/thatbig.png">
+    <source media="(min-width: 500px)" srcset="i/sobig.png">
+    <source media="(min-width: 400px)" srcset="i/tiddler.png">
+    <img
+        src="i/oldbrowser.png"
+        srcset="i/tiddler.png"
+        alt="Fallback old-style image element for older browsers." >
+</picture>
+
+<p>The picture element can be used to create responsive images which choose an appropriate image basedon the size of the contaiing area.  In this case the container is the body, and the image is set to be 100% of the body width.  The bitmap that gets chosen by the browser depends therefore on the size of the window.

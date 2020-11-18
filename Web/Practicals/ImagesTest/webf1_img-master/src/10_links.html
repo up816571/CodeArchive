@@ -1,0 +1,33 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Images as Links</title>
+
+<style>
+    :target {
+        background: yellow;
+    }
+</style>
+
+
+<ol>
+    <li>To turn an image into a link, just wrap it in an anchor element (i.e. <code>&lt;a href=""&gt;&lt;/a&gt;</code>)
+    <li>The teapots here are relative links to fragments within this document.
+    <li>Notice that here the <code>target</code> pseudo selector is used to color the target of the previously clicked link.
+    <li>Notice the fragment appears at the end of the URL in the address bar and changes with each click.
+</ol>
+
+<a href=#one>
+ <img id=teapot1 src="i/teapot.png" alt="A picture of a tall creamy white porcelain teapot.">
+</a>
+
+<a href=#two>
+    <img id=teapot1 src="i/teapot.png" alt="A picture of a tall creamy white porcelain teapot.">
+</a>
+
+<a href=#three>
+    <img id=teapot1 src="i/teapot.png" alt="A picture of a tall creamy white porcelain teapot.">
+</a>
+
+<p id=one>The first teapot was clicked.
+<p id=two>The second teapot was clicked.
+<p id=three>The third teapot was clicked.

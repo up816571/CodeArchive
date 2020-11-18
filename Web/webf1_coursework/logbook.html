@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Discovery Log</title>
+  <link rel="icon" type="img/png" sizes="16x16" href="multimedia/topicon.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/discovery.css">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <script src="scripts.js"></script>
+</head>
+<body>
+
+  <header>
+    <nav class="mobile">
+        <button onclick="myFunction()" class="mobilebutton">&#8801;</button>
+        <div id="dropbox" class="content">
+          <a href="index.html">Home</a>
+          <a href="litreview.html">Literature Review</a>
+          <a href="logbook.html">Discovery Log</a>
+        </div>
+    </nav>
+
+    <nav class="desktop">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="litreview.html">Literature Review</a></li>
+        <li><a href="logbook.html">Discovery Log</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Discovery Log</h1>
+    <p>This is my discovery log, which i have been creating over the past acedemic year for the WEBF1 unit.</p>
+    <div id="contentlist">
+      <p>Here is a list of things you can find.</p>
+      <ul>
+        <li><a href="#litreview">Literature review research</a></li>
+        <li><a href="#htmlcode">HTML</a></li>
+        <li><a href="#csscode">CSS</a></li>
+        <li><a href="#links">Links</a></li>
+        <li><a href="#uses">Usablity</a></li>
+        <li><a href="#scripts">Scritpting</a></li>
+        <li><a href="#access">Accessibility</a></li>
+        <li><a href="#svg">SVGs</a></li>
+        <li><a href="#database">Databases</a></li>
+        <li><a href="#other">Other things</a></li>
+        <li><a href="#summary">Summary</a></li>
+      </ul>
+    </div>
+   <div id="litreview">
+    <h2>Literature review research</h2>
+    <p>The first task in the website foundations course was to create a literature review relating to personal information exposure on the web. The main focus of my review was on Social engineering and what you can then do with this information. Social engineering is a process which involves gathering data about an individual. More on this can be found in my literature review page.</p>
+    <p>Spear phishing is a primary means to gain access into someone's personal or business accounts which can be aided by social engineering. This has a large risk to the business or person. There are many ways which social engineering can be used in order to gain access to unauthorized accounts by posing as someone the target may know to try get information.</p>
+    <p>In the process of researching i also found that simple pieces of information about a person were mainly used as their passwords or security questions. Many companies have policies on their terms of service to try and counteract over sharing information but generally don't have the highest success rate.</p>
+    <p>The literature review highlighted to be careful with how much information is shared and to be careful with whom this information is shared with. Dr Nick Savage made a point be careful now as your position in the future could be at risk by people you have shared information within the past.</p>
+   </div>
+   <div id="htmlcode">
+    <h2>HTML</h2>
+    <p>This is the main content of the webf1 and it started of by looking at hyper text markup language or html for short. HTML is how a web page is marked up and there are a number of tags that can be used. Some main content separation tags are as follow:</p>
+    <ul>
+      <li>Header - used to declare all metadata in which describes the other data in the page.
+      <li>Body - where the majority of content will go.
+      <li>Nav - A HTML5 tag that is used to declare links in i.e. the navigation section of the webpage.
+      <li>Footer - used to design the footer or bottom part of the page, normally has a validation link and author of the page in and potential copyright detail.
+      <li>Section - Can be used to define a section of a page.
+    </ul>
+    <p>Metadata tags to define the information about the page</p>
+    <ul>
+      <li>Link - used to link other documents such as style sheets.
+      <li>Title - the title of the page which will be shown in the browser
+    </ul>
+    <p>Text separation which are used to separate out content on a page</p>
+    <ul>
+      <li>H - Heading tags from 1 to 6 to show headings.
+      <li>Div - Used to group similar content so that it can all be styled as one element.
+      <li>P - used for separating paragraphs.
+      <li>Main - Specifies where the main content is and is used similarly to the nav tag, it was also introduced in HTML5.
+      <li>ol and ul - Order list and unordered list to list a set of things.
+    </ul>
+    <p>Text formatting which is used to affect how text is presented</p>
+    <ul>
+      <li>A - The anchor tag which is used to link other web pages or other things such as an email address. The A tag needs to be given a link in the tag defined by href=””.
+      <li>B - The bold tag to highlight certain text
+      <li>Strong - Shows the text is important and defaults to making the text bold.
+      <li>Em - Emphasized text which can also be nested to make the text more emphasized at each level. Explained better at MDN’s <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/em">em article</a>.
+      <li>I - italic tag which is offset from the rest of the text.
+      <li>U - which is used to underline the text.
+    </ul>
+    <p>Media tags for things like videos and images</p>
+    <p>Img - Used to show an image on the page, the image will also have an alt tag which is needed for people with a screen reader or other disabilities so they know what the image is of. The image tag also needs scr for the source of the image.</p>
+    <p>Video - Used to put a video into a web page and also includes a source tag. Most videos will also include a transcript for those that can’t hear or have other disabilities.</p>
+    <p>Scripting tags showcases in several lectures.</p>
+    <ul>
+      <li>Canvas - to designate an area to be a canvas to draw images or animations on.
+      <li>Script - to put a script in such as a java script
+    </ul>
+    <p>Many more element that html uses can be found on the Mozilla development networks <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">element list</a>. This site has been a extremely helpful tool in learning what each element does and how best to use them.</p>
+   </div>
+   <div id="csscode">
+    <h2>CSS</h2>
+    <p>Is a descriptive markup which helps add meaning the site and its information. CSS stands for cascading style sheet. Having good css can reduce maintenance cost of a site and also reduce costs by only having to send a few css’s to users rather than having styles within the html.</p>
+    <p>CSS can target specific tags that are used in HTML so they will ll have the same style for example giving the main element a font-family of ariel will make all the text in main have the font arial. Selectors can also be used to target specific content. If in the html a tag was given an ID, it can be used in the css to only style that tag. ID’s are unique so cannot be used again on the same page as an id can be linked to to take the user to a specific place on a page. Giving a class to tag is similar to an Id but the same class can be reused on the page.</p>
+    <p>The box model is also used on CSS to define the space that the elements take up. First goes the actual continent which will have a width and a height which can be declared in css. Next is padding which is used to define the inner part of the box. After that is a border which by default is set to be nothing. After is the margin which is outside of the box and pushes other elements away like padding will. A useful diagram can be found on <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/Box_model">MDN’s page</a>.</p>
+    <p>SCSS is another tool that is being developed. It is similar to CSS but you can declare variables and it has other utility that is not part of regular CSS. At the moment is not nearly as wide used as CSS but s it develops more it could see a much larger use.</p>
+   </div>
+   <div id="links">
+    <h2>Links</h2>
+    <p>Links are used to navigate webpages on line using a URL which stands for uniform resource locater. There are several formats used such as ftp for file transfer. Mailto for email, http/https for web pages and secure web pages. Fragments can be used to go elements with ID’s. Using a / will try go to a subfolder of a webpage to access that page.</p>
+   </div>
+   <div id="uses">
+    <h2>Usablity</h2>
+    <p>There are several ways to help code a website efficiently. In most editing environments you can find packages which have general utility feature in them. Here are some for the atom editing environment.</p>
+    <ul>
+      <li>Beautify - Indents code for you.
+      <li>Linter - Helps to pick up errors on the page.
+      <li>Emmet - For most elements hitting tab will give a skeleton framework for it.
+      <li>File icons - Has images for different file types.
+      <li>Minimap - Has a minimap in the corner for the code
+      <li>HTML live view - Shows HTML with live updates in atom.
+      <li>Color picker - Can pick colours from the colour picker in atom.
+    </ul>
+   </div>
+   <div id="scripts">
+    <h2>Scritpting</h2>
+    <p>Scripts can be used on a webpage to give animations and other features. The scripts we have looked at in WEBF1 are written in javascript. The scripts can make the page more interactive with the user and act dynamically to certain events. A common use of javascript is validation when a form is being filled out.</p>
+   </div>
+   <div id="access">
+    <h2>Accessibility</h2>
+    <p>A web page has to accessible to all users and it is a criminal offense to discriminate against certain groups. The main ways to make a web page accessible is to keep content and form separate with good html and css. Other tags can be used to help certain disabilities like the alt tag for images and a transcript for videos. Aria tags can now also be used to define what objects on html like the main content or a button to help those with disabilities. Making sure a website is not reliant on colour code is also important as some colourblind people might not be able to distinguish if a box is red or green for errors as an example.</p>
+   </div>
+   <div id="svg">
+    <h2>SVGs</h2>
+    <p>Scalar vector graphics are a type of image that scale as the size of the image is increased. They are much smaller than standard PNGs and JPEGs as only a few things are defined such as a curve from one point to another the line colour and fill. This reduces the amount of data sent and makes loading a page easier which will result in happy users.</p>
+   </div>
+   <div id="database">
+    <h2>Databases</h2>
+    <p>Databases can be used on webpages to store data. This means that the web page can display only data requested from the database so the page can change more freely in content depending on the user. Using a database is also dependent on have good CSS and HTML as adding new elements from a database would be incredibly time consuming if they needed to be formated every time they were added.</p>
+   </div>
+   <div id="other">
+    <h2>Interesting unrelated things</h2>
+    <p>Students within the school of computing get access to a virtual machine which is capable of running SQL, shell scripts and hosting websites. The link the the vm can be found here <a href="http://port.ac.uk/myvm">MYVM</a>. A tool shown of in one of the practicals is Ghostery which can show what things are tracking you on a website.</p>
+  </div>
+    <h2 id="summary">Summary</h2>
+    <p>Over the past academic year these are all the things that i have discovered whilst completing the WEBF1 unit. This website was created with the things i have learnt about over the year. I have found the WEBF1 unit to be very enjoyable and useful in learning the basics of how to create a website.</p>
+  </main>
+
+  <footer>
+    <p><a href="http://validator.w3.org/check?uri=referer">validation</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!doctype html>
+<title>jsbook</title>
+
+<style>
+  body, html {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    background-color: white;
+  }
+
+  body > header {
+    position: absolute;
+    width: 100%;
+    background-color: #64a97e;
+    box-sizing: border-box;
+    top: 0;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  body > header h1 {
+    font-family: "Tahoma", "Arial", sans-serif;
+    color: white;
+    font-weight: normal;
+    line-height: 1em;
+    padding: 0;
+    margin: 0;
+    font-size: 2em;
+  }
+
+  body > header > input {
+    top: 1em;
+    right: 1em;
+    font-size: 1rem;
+    padding: .3em;
+    width: 8em;
+  }
+
+  main {
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: .5em;
+    padding-top: 4.5em;
+    max-width: 40em;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  main > header h1 {
+    margin: 0;
+  }
+
+  main p.author {
+    display: inline;
+  }
+
+  main p.author:after {
+    content: ':';
+    display: inline;
+  }
+
+  main p.title {
+    display: inline;
+    font-weight: bold;
+  }
+
+  main p.text {
+    white-space: pre-line;
+  }
+
+  main article {
+    position: relative;
+  }
+
+  main article > .delete {
+    position: absolute;
+    top: .5em;
+    right: 0;
+    border: 1px solid transparent;
+    border-radius: .3em;
+    padding: .2em;
+    display: none;
+    text-align: center;
+    width: 1em;
+    color: #888;
+    background: rgba(255,255,255,.5);
+  }
+
+  main article:hover:not(.deleting) > .delete {
+    display: block;
+  }
+
+  main article > .delete:hover {
+    border: 1px solid black;
+    color: black;
+    background: white;
+  }
+
+  main article.deleting {
+    opacity: .5;
+  }
+
+  main article + article {
+    border-top: 1px solid #888;
+    padding-top: 1em;
+  }
+
+  article.new {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: baseline;
+    padding: 1em 0;
+    justify-content: space-before;
+    flex-wrap: wrap;
+  }
+
+  article.new > *:not(:last-child) {
+    margin-bottom: .5em;
+  }
+
+  #title {
+    margin-right: auto;
+  }
+
+  #text {
+    flex: 100%;
+  }
+
+  main > nav {
+    display: block;
+    text-align: center;
+  }
+
+  a.pagebtn {
+    display: inline-block;
+    text-align: center;
+    width: 1em;
+    height: 1em;
+    padding: .5em;
+    border: 1px solid #888;
+    border-radius: .3em;
+    text-decoration: none;
+    color: black;
+  }
+
+  a#showall {
+    display: inline-block;
+    padding: .5em;
+    border: 1px solid #888;
+    border-radius: .3em;
+    text-decoration: none;
+    color: black;
+    height: 1em;
+  }
+
+  a.pagebtn.disabled,
+  a#showall.disabled {
+    color: #aaa;
+    cursor: default;
+  }
+
+  a#showall.disabled {
+    font-style: italic;
+  }
+
+  #error {
+    visibility: hidden;
+    color: #800;
+    font-size: 80%;
+  }
+
+  body.error #error {
+    visibility: visible;
+  }
+
+  body.error input:invalid,
+  body.error textarea:invalid {
+    border-color: #F00;
+    background-color: #FF0;
+  }
+
+  body.error input:focus:invalid,
+  body.error textarea:focus:invalid {
+    outline: none;
+  }
+
+
+</style>
+
+<header>
+  <h1>jsbook</h1>
+  <input type="text" id="username" required placeholder="your name">
+</header>
+
+<main>
+  <header>
+    <h1>Stories</h1>
+  </header>
+  <article class="new">
+    <p id="error">Please fill out all the fields, including your name</p>
+    <input type="text" id="title" autofocus required placeholder="title">
+    <textarea id="text" rows="4" required placeholder="What would you like to share?"></textarea>
+    <button id="submit">submit</button>
+  </article>
+  <template id="story-template">
+    <article class="story">
+      <p class="author">Luke Skywalker</p>
+      <p class="title">Hello world!</p>
+      <p class="text">So I decided to join jsbook like everyone else. What does one post here?</p>
+      <div class="delete">X</div>
+    </article>
+  </template>
+  <article class="story">
+    <p class="author"></p>
+    <p class="title">loading...</p>
+    <p class="text"></p>
+  </article>
+  <nav>
+    <a id="prevpage" class="pagebtn" href="#">&#x25c4;</a>
+    page <span id="currpage">0</span> of <span id="pagecount">0</span>
+    <a id="nextpage" class="pagebtn" href="#">&#x25ba;</a>
+  </nav>
+</main>
+
+
+<script src="index.js">
+</script>

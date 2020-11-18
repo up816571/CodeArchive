@@ -1,0 +1,14 @@
+{
+  "name": "sup816571",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "up816571",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}

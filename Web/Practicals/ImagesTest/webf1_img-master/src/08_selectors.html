@@ -1,0 +1,26 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Use selectors carefully.</title>
+
+<style>
+    .teapot {
+        float: left;
+        width: 20vw;
+        transition: all 1s ease-in-out;
+    }
+
+    .teapot:hover {
+        transform: rotatex(360deg);
+        width: 60vw;
+    }
+</style>
+
+
+<p><img src="i/teapot.png" class=teapot alt="A picture of a tall creamy white porcelain teapot." style=""> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+<ol>
+    <li>Animations can make a page <em>feel</em> more responsive, and avoid jumpiness - but - you have to be careful with your CSS selectors.
+    <li>Observe the <code>:hover</code> pseudo selector on the <code>.teapot</code> class. When the teapot is hovered over, it flips end over end and grows in size. However, as it flips it becomes thinner until the mouse is no longer hovering over it, at which point the rotation begins to undo
+    <li>To solve this change the selector so that the <code>.teapot:hover</code> selector so that it reads <code>p:hover .teapot</code>. This is saying that the declarations in this CSS rule will apply to a .teapot class which has an ancestor p element that is being hovered over.
+    <li>Move the mouse anywhere over the paragraph and the teapot will flip smoothly.
+</ol>

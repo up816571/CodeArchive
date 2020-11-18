@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Harbour()
+comment0.text=\n\ Initialisation\ required\ for\ the\ harbour\ list\n
+comment1.params=newBoat
+comment1.target=void\ dockBoat(Boat)
+comment1.text=\n\ Store\ a\ new\ boat\ in\ the\ harbour\ list\n\ @param\ \ \ newBoat\ \ \ \ \ the\ boat\ to\ be\ stored\n
+comment2.params=
+comment2.target=int\ countBoats()
+comment2.text=\n\ Counts\ the\ number\ of\ boats\ currently\ docked\ at\ the\ harbour\n\ @return\ \ \ \ \ \ the\ number\ of\ boats\ in\ the\ harbour\n
+comment3.params=i
+comment3.target=void\ undockBoat(int)
+comment3.text=\n\ Undock\ a\ boat\ from\ the\ harbour\n\ @param\ \ \ i\ \ \ index\ of\ the\ boat\ to\ undock\n
+comment4.params=reqHomePort
+comment4.target=void\ printBoatsWithHomePort(java.lang.String)
+comment4.text=\n\ Print\ the\ details\ of\ boats\ which\ have\ a\ particular\ home\ port\n\ @param\ \ \ reqHomePort\ \ \ \ \ the\ home\ port\ to\ print\ the\ associated\ boats\ for\n
+comment5.params=searchBerth
+comment5.target=void\ findBoat(int)
+comment5.text=\n\ Find\ a\ particular\ boat\ based\ on\ the\ berth\ number,\ and\ print\ the\ details\n\ @param\ \ \ searchBerth\ \ \ \ \ the\ berth\ for\ which\ the\ boat\ details\ are\ required\n
+numComments=6

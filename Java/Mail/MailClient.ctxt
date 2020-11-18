@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=mailServer\ userName
+comment0.target=MailClient(MailServer,\ java.lang.String)
+comment1.params=
+comment1.target=void\ printNextMailItem()
+comment2.params=to\ subject\ message
+comment2.target=void\ sendMailItem(java.lang.String,\ java.lang.String,\ java.lang.String)
+numComments=3

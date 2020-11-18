@@ -1,0 +1,20 @@
+article a{
+  text-decoration: none;
+}
+
+article a:hover{
+  color: maroon;
+}
+
+article {
+  padding-bottom: 2em;
+}
+
+h1 {
+  padding-top: 1em;
+  padding-bottom: 0.4em;
+}
+
+h2 {
+  padding-top: 1em;
+}
